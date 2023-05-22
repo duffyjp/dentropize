@@ -1,6 +1,9 @@
 # Dentropize
 Javascript function to sort tables
 
+## Demo
+[GitHub Pages](https://duffyjp.github.io/2023/05/22/Table-Sorting.html)
+
 ## Install
 
 * Copy in the dentropize.js to your project. 
