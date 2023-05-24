@@ -1,0 +1,29 @@
+/* Add an icon indicating a column is sortable */
+table.sortable thead th, table.remote thead th {
+  padding-left: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIwIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTM3IDQxYzEzLTEyIDMzLTEyIDQ2IDBsMTI4IDEyOGM5IDEwIDEyIDIzIDcgMzVzLTE3IDIwLTMwIDIwSDMyYTMyIDMyIDAgMCAxLTIzLTU1TDEzNyA0MXptMCA0MzBMOSAzNDNjLTktMTAtMTEtMjMtNi0zNXMxNi0yMCAyOS0yMGgyNTZhMzIgMzIgMCAwIDEgMjMgNTVMMTgzIDQ3MWEzMiAzMiAwIDAgMS00NiAweiIvPjwvc3ZnPg==);
+  background-size: 7px 22px;
+  background-position: 7px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Descending icon */
+table.sortable thead th.dir-d { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48IS0tISBGb250IApBd2Vzb21lIFBybyA2LjQuMCBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gCmh0dHBzOi8vZm9udGF3ZXNvbWUuY29tL2xpY2Vuc2UgKENvbW1lcmNpYWwgTGljZW5zZSkgQ29weXJpZ2h0IDIwMjMgCkZvbnRpY29ucywgSW5jLi0tPjxwYXRoIGQ9Ik0xODMgNDcxYTMyIDMyIDAgMCAxLTQ2IDBMOSAzNDNjLTktMTAtMTItMjMtNy0zNXMxNy0yMCAzMC0yMGgyNTZhMzIgMzIgMCAwIDEgMjMgNTVMMTgzIDQ3MXoiLz48L3N2Zz4=); }
+
+/* Ascending icon */
+table.sortable thead th.dir-u { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48IS0tISBGb250IApBd2Vzb21lIFBybyA2LjQuMCBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gCmh0dHBzOi8vZm9udGF3ZXNvbWUuY29tL2xpY2Vuc2UgKENvbW1lcmNpYWwgTGljZW5zZSkgQ29weXJpZ2h0IDIwMjMgCkZvbnRpY29ucywgSW5jLi0tPjxwYXRoIGQ9Ik0xODMgNDFhMzIgMzIgMCAwIDAtNDYgMEw5IDE2OWMtOSAxMC0xMiAyMy03IDM1czE3IDIwIDMwIDIwaDI1NmEzMiAzMiAwIDAgMCAyMy01NUwxODMgNDF6Ii8+PC9zdmc+); }
+
+/* Use an animated SVG while remote tables are loading */
+table.remote:not(.sortable) thead th {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHdpZHRoPSI3cHgiIGhlaWdodD0iN3B4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTAgMTI4VjgzaDE3LjI1djI3Ljc1aDkzLjVWODNIMTI4djQ1SDB6IiBmaWxsPSIjMDAwMDAwIi8+PGc+PHBhdGggZD0iTTgwLjkyLTk3LjgydjUxLjI3aDE4LjE1TDY0LS4wNWwtMzUuMDctNDYuNWgxOC4xNXYtNTEuMjdoMzMuODR6IiBmaWxsPSIjMDAwMDAwIi8+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJ0cmFuc2xhdGUiIGZyb209IjAgMCIgdG89IjAgMjIwIiBkdXI9IjE4MDBtcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L2c+PC9zdmc+);
+  background-size: 7px 7px;
+  cursor: default;
+}
+
+/* Columns with disabled sorting */
+table.sortable thead th.sorter-false {
+  background-image: none;
+  padding-left: 10px;
+  cursor: default;
+}
