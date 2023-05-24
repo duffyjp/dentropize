@@ -22,7 +22,7 @@ document.addEventListener('turbo:load', dentropize);
 ```ruby
 # config/importmap.rb
 
-pin "dentropize", to: "dentropize"
+pin "dentropize", to: "dentropize.js"
 ```
 
 
