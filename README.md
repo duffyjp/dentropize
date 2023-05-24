@@ -6,7 +6,7 @@ Javascript function to sort tables
 
 ## Install
 
-* Copy in the dentropize.js to your project. 
+* Copy in the dentropize.js to your project or use [jsDelivr](https://github.com/duffyjp/dentropize/issues/1). 
   * `vendor/javascript/dentropize.js` for Rails.
 * Import the function
 * Add to the appropriate event for your framework.
