@@ -72,8 +72,8 @@ function dentropize() {
             return reverse ? -1 : 1;
           } else {
 
-            // If the values parse as Numbers
-            let number = Number(x) - Number(y);
+            // If the values parse as Numbers (strip commas)
+            let number = Number(x.replace(/,/g, '')) - Number(y.replace(/,/g, ''));
             if (!isNaN(number)) return number;
 
             // If the values parse as Date or Time
