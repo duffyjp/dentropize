@@ -29,8 +29,8 @@ pin "dentropize", to: "dentropize.js"
 ## Usage
 
 * Add the CSS class "sortable" to your table.
-
-
+* To sort by a hidden value use "data-sort"
+  - `<td data-sort="5">five</td>`
 ## Notes
 
 * This code is essentially a heavily modified [sortable](https://github.com/tofsjonas/sortable) made to work like [jquery tablesorter](https://mottie.github.io/tablesorter/docs/) but only the parts you really REALLY need.
